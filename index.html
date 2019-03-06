@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<title>Precificação de Imóveis</title>
+
+	<!-- Styles -->
+	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+
+	<div class="container">
+		<div class="py-5 text-center">
+			<h2>Precificador de Apartamentos da Cidade de Belo Horizonte</h2>
+			<p class="lead">Confira <a href=https://nbviewer.jupyter.org/github/gpass0s/Graduation_Project/blob/master/data_analysis.ipynb> aqui </a> a metodologia usada no modelo de precificação.</p>
+			<p class="lead">Insira abaixo as informações do imóvel para obter uma estimativa do seu valor de mercado.</p>
+		</div>
+
+		<div id="app">
+			<previsao-component></previsao-component>
+		</div>
+
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">&copy; Densenvolvido por <a href=https://github.com/gPass0s> @gPass0s</a></p>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="{{ asset('js/app.js') }}"></script>
+
+</body>
+</html>
